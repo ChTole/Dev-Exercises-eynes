@@ -46,3 +46,27 @@ class Circulo:
             
     def __str__(self, ):
         return f"Círculo con valor de radio {self.radio}."
+    
+
+
+#### Casos de prueba ####
+
+# circulo1 = Circulo(5)
+# print(circulo1.area())
+# print(circulo1.perimetro())
+
+# circulo2 = Circulo(0)
+# circulo3 = Circulo(-15)
+
+# print(circulo1)
+
+# circulo1.modificar_radio(0)
+# circulo1.modificar_radio(2)
+# print(circulo1)
+
+# print(circulo1*5)
+
+# circulo4 = circulo1*0
+# circulo4 = circulo1*5
+
+# print(circulo4)
