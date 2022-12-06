@@ -23,3 +23,16 @@ class Circulo:
     
     def perimetro(self, ):
         return round(pi * self.radio * 2, 2)
+    
+    def modificar_radio(self, nuevo_radio):
+        try:
+            self.radio = Circulo.comprobar_cero(nuevo_radio)
+        except ValueError as e:
+            print(f"""
+            {type(e).__name__} 
+            Radio: {nuevo_radio}
+            No se puede modificar el radio a valor igual o menor a 0.
+            """)
+    
+    def __str__(self, ):
+        return f"Círculo con valor de radio {self.radio}."
