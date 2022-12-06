@@ -34,5 +34,15 @@ class Circulo:
             No se puede modificar el radio a valor igual o menor a 0.
             """)
     
+    def __mul__(self, factor):
+        try:
+            return Circulo(self.radio * Circulo.comprobar_cero(factor))
+        except ValueError as e:
+            print(f"""
+            {type(e).__name__}
+            Multiplicar por {factor}
+            No se puede multiplicar un Círculo por un valor igual o menor a 0.
+            """)
+            
     def __str__(self, ):
         return f"Círculo con valor de radio {self.radio}."
